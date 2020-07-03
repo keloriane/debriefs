@@ -1,0 +1,15 @@
+#home{
+    display: flex;
+    .left-gap{
+        height: 100vh;
+    }
+    .image-wrapper{
+        width: 310px;
+        height: 100%;
+        background: linear-gradient(235.9deg, rgba(0, 0, 0, 0.31) 11.1%, rgba(133, 195, 230, 0.31) 98.28%);
+        bg-img{
+            background-image: url("home.png");
+        }
+    }
+}
+

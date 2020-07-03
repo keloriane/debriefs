@@ -1,0 +1,25 @@
+.header-container{
+    width: 105px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    .wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 815px;
+        .hamburger-menu{
+            position: absolute;
+            z-index: 999;
+        }
+    }
+    
+}

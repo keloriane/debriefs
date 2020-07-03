@@ -1,0 +1,27 @@
+#home{
+    display: flex;
+    .left-gap{
+        height: 100vh;
+        display: flex;
+    }
+    .side-home-bar{
+        position: relative;
+    }
+    .void{
+        max-width: 325px;
+        h100%
+    }
+    .image-wrapper{
+        position:absolute;
+        z-index:2;
+        width: 310px;
+        height: 100%;
+        background: linear-gradient(235.9deg, rgba(0, 0, 0, 0.31) 11.1%, rgba(133, 195, 230, 0.31) 98.28%);
+        
+        .img-bg{
+           position: absolute;
+           z-index:-1;
+        }
+    }
+}
+
