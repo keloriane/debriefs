@@ -13,9 +13,10 @@ function App() {
       <div className="App" id="page">
 
           <Header/>
-          <Home/>
+    
        
               <Switch>
+                <Route exact path="/" component={Home} />
                 <Route exact path="/a-propos" component={Opportunities} />
                 <Route exact path="/services" component={Solutions} />
                 <Route exact path="/contact" component={Contact} />

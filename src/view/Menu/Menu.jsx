@@ -29,9 +29,9 @@ function Menu({state}) {
             if (state.clicked === false) {
               // If menu is closed and we want to open it.
         
-              staggerRevealClose(revealMenu,revealMenuBackground);
+              staggerRevealClose(revealMenu,revealMenuBackground,menu);
               // Set menu to display none
-              gsap.to(menu, { duration: 1, css: { display: "none" } });
+             
             } else if (
               state.clicked === true ||
               (state.clicked === true && state.initial === null)
@@ -102,7 +102,7 @@ function Menu({state}) {
                             <ul>
                                 <li> <Link ref={el=>line1 = el} to="/a-propos"> à propos </Link> </li>
                                 <li> <Link ref={el=>line2 = el} to="/services"> Services </Link> </li>
-                                <li> <Link ref={el=>line3 = el} to="/webinaires"> Webinaires </Link> </li>
+                                <li> <Link ref={el=>line3 = el} to="/"> Acceuil </Link> </li>
                                 <li> <Link ref={el=>line4 = el} to="/clients"> Clients </Link> </li>
                                 <li> <Link ref={el=>line5 = el} to="/contact"> Contact </Link> </li>
                             </ul>

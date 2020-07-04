@@ -21,7 +21,7 @@ const Header = ({history}) => {
           });
     },[history])
     const handleMenu = () => {
-      disableMenu()
+      // disableMenu()
         if (state.initial === false) {
           setState({
             initial: null,
@@ -41,12 +41,7 @@ const Header = ({history}) => {
         }
       };
     
-    const disableMenu = () => {
-        setDisabled(!disabled);
-        setTimeout(()=> {
-            setDisabled(false)
-        },1200)
-    }
+
 
 
     return (
@@ -54,7 +49,7 @@ const Header = ({history}) => {
             <div className="header-container">
                 <div className="wrapper">
                 <div className="hamburger-menu">
-                    <button disabled={disabled} className="menu" onClick={handleMenu}>
+                    <button className="menu" onClick={handleMenu}>
                         Menu
                     </button>
                 </div>
