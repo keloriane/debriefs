@@ -1,87 +1,173 @@
+@import "./../../mixins/variables.scss";
 #home{
 
-}
-#middle-content{
-    display: flex;
-    height: 332px;
-    h2{
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: calc(20px + 6 * ((100vw - 320px) / 720));
-        line-height: 175.9%;
-        /* or 58px */
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
-        opacity: 0;
+    width: 95%;
+    height: 100%;
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 175.9%;
+                    /* or 32px */
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                     color: #FFFFFF;
+                     text-transform: uppercase;
+                     text-decoration: none;
+                }
+                button{
+                    width: 169px;
+                    height: 49px;
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    background: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
     }
-    h3{
-        font-family: Inter;
-        font-style: normal;
-        font-weight: bold;
-        font-size: calc(16px + 6 * ((100vw - 320px) / 720));
-        line-height: 175.9%;
-        /* or 39px */
-        opacity: 0;
-        letter-spacing: 0.05em;
-
-        color: #85C3E6;
-
-    }
-    .content{
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    p{
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 22px;
-        line-height: 175.9%;
-        /* or 39px */
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
-        opacity: 0;
-    }
-    .left-gap{
-        height: 100vh;
-        display: flex;
-
-    }
-
-    .side-home-bar{
-        position: relative;
-    }
-    .void{
-        width: 325px;
-        height: 100%;
-    }
-    .image-wrapper{
-        position:absolute;
-        z-index:2;
-        width: 310px;
-        height: 100%;
-        background: linear-gradient(235.9deg, rgba(0, 0, 0, 0.31) 11.1%, rgba(133, 195, 230, 0.31) 98.28%);
+    .home-wrapper{
         
-    }
-}
-
-.img-bg{
-    width: 100%;
-    overflow: hidden;
-}
-.right-gap{
-    display: flex;
-    align-items: center;
-    .text-container{
-        width: 585px;
-        height: 298px;
+            width: 100%;
+            
         display: flex;
-        flex-direction: column;
-        align-items: space-around;
+        .left-gap{
+            width: 10%;
+    
+        }
+        .image-layer{
+            width: 100%;
+            max-width: 320px;
+            height: 100vh;
+            background-image: url("./../../../assets/images/home.png");
+            background-size: cover;
+            position: relative;
+            .blue-layer{
+                
+                width: 100%;
+                max-width: 320px;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                background: linear-gradient(235.9deg, rgba(0, 0, 0, 0.31) 11.1%, rgba(133, 195, 230, 0.31) 98.28%);
+            }
+
+        
+        }
+        .center-home-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .button-container{
+                width: 70%;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .line{
+                    width: 120px;
+                    border:.5px solid white;
+                    margin-right: 10px;
+                }
+                button{
+                    width: 269px;
+                    height: 73px;
+                    border: 1px solid white;
+                    background: none;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    text-decoration: none;
+                    align-self: center;
+                    justify-self: unset;
+                    a{
+                        
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 175.9%;
+                        /* or 42px */
+                        text-decoration: none;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+
+                        color: #FFFFFF;
+
+                    }
+    
+    
+                }
+            }
+            
+
+        }
+        .home-content{
+            display: flex;
+            justify-content: space-around;
+            max-width: 510px;
+            height: 355px;
+            flex-flow: column wrap;
+            margin: auto;
+            align-self:center;
+            .home-title{
+                h1{
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 52px;
+                    line-height: 175.9%;
+                    /* or 91px */
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+
+                }
+            }
+            .home-subtitle{
+                h3{
+
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 1;
+                    font-size: 22px;
+                    line-height: 175.9%;
+                    /* or 39px */
+    
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;            
+                    color: $blue;
+                }
+
+            }
+            home-text{
+                p{
+                    font-family: Inter;
+                    font-style: normal;
+           
+                    font-size: 22px;
+                    line-height: 175.9%;
+                    /* or 39px */
+
+                    letter-spacing: 0.05em;
+
+                    color: white;
+                }
+            }
+            
+        }
     }
 }
 
-
+@media screen and (max-width:1100px){
+    .home-nav{
+        display: none;
+    }
+}

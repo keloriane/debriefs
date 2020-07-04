@@ -2,8 +2,8 @@ import React,{useState, useEffect} from 'react'
 import Menu from '../../view/Menu/Menu';
 import {withRouter} from "react-router-dom";
 import "./header.scss";
-import logo from "./../../components/page/Home/logo-Debriefs.png"
-import social from "./../../components/page/Home/SOCIAL.png"
+import logo from "./../../assets/images/logo-Debriefs.png";
+import social from "./../../assets/images/SOCIAL.png";
 
 
 const Header = ({history}) => {

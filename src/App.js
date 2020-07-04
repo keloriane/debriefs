@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
 
-import Home from './components/page/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './components/page/Home/Home';
 
 
 
@@ -11,11 +12,10 @@ function App() {
     <Router>
       <div className="App" id="page">
 
-
-          
-        <Home />
+          <Header/>
+          <Home/>
+       
               <Switch>
-              
                 <Route exact path="/a-propos" component={Opportunities} />
                 <Route exact path="/services" component={Solutions} />
                 <Route exact path="/contact" component={Contact} />
