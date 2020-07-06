@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-
+import Contact from './components/page/Contact/Contact.jsx';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/page/Home/Home';
 
@@ -36,9 +36,7 @@ function Solutions() {
   return <p>Solutions that help you.</p>;
 }
 
-function Contact() {
-  return <p>Feel free to reach us.</p>;
-}
+
 
 
 

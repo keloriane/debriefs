@@ -45,7 +45,7 @@ const Header = ({history}) => {
 
 
     return (
-        <header>
+        <header className="header">
             <div className="header-container">
                 <div className="wrapper">
                 <div className="hamburger-menu">
@@ -60,10 +60,9 @@ const Header = ({history}) => {
                 </div>
                 <div className="social">
                     <div className="social-items">
-                       <img src={social} alt="social"/>
+                      <img src={social} alt="social"/>
                     </div>
                 </div>
-                   
                 </div>
             </div>
             <Menu state={state} />

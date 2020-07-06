@@ -19,7 +19,7 @@ export const staggerRevealClose = (node1, node2, node3) => {
   const nodeAnim = gsap.timeline()
   nodeAnim
   .to([node1, node2], {
-    duration: 0.8,
+    duration: 0.02,
     height: 0,
     ease: "power3.inOut",
     stagger: {
