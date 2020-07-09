@@ -1,0 +1,29 @@
+@import "./../../../../assets/style/module/variables.scss";
+@import "./../../../../assets/style/module/breakpoints.scss";
+#category{
+    height: 50vh;
+    height: calc(var(--vh, 1vh) *50);
+}
+
+.cat{
+    background-size: cover;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.row{
+    .cat{
+        .cat-container{
+            position: relative;
+            background: $dBlue;
+            width: 31,66vw;
+            .cat-details{
+    
+            }
+
+        }
+    }
+}

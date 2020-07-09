@@ -1,0 +1,17 @@
+@import "./../../../assets//style/module/variables.scss";
+#services-details {
+  background: $gradient;
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .blue-layer-service{
+      
+background: linear-gradient(107.09deg, rgba(133, 195, 230, 0.75) 17.8%, rgba(255, 255, 255, 0.27) 95.6%);
+  }
+  .text-details-service{
+      width: 100%;
+      max-width: 613px;
+
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "service": {
+    "1": {
+      "title": "Sécurité & protection des données",
+      "url": "protection",
+      "paragraph": "Security by design ",
+      "paragraphBreak": "RGPD"
+    },
+    "2": {
+      "title": "Dévelopement",
+      "url": "Development",
+      "paragraph": "Site web/ E-commerce/ Application",
+      "paragraphBreak": "Modélisation et Assurance qualité "
+    },
+    "3": {
+      "id": 3,
+      "title": "Stratégie & Marketing digital",
+      "url": "marketing",
+      "paragraph": "Plan et Stratégie digitale ",
+      "paragraphBreak": "Optimisation et référencement"
+    },
+    "4": {
+      "id": 4,
+      "title": "Création contenu & design",
+      "url": "design",
+      "paragraph": "Création et montage vidéos",
+      "paragraphBreak": "Branding"
+    },
+    "5": {
+      "id": 5,
+      "title": "Audit",
+      "url": "audit",
+      "paragraph": "Audit sécurité de votre site",
+      "paragraphBreak": "internet Audit digital marketing"
+    },
+    "6": {
+      "id": 6,
+      "title": "Formations et workshops",
+      "url": "training",
+      "paragraph": "Sur mesure ou en entreprise",
+      "paragraphBreak": "Webinaire & E-learning"
+    }
+  }
+}

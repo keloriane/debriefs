@@ -1,0 +1,23 @@
+#category{
+    height: 50vh;
+    height: calc(var(--vh, 1vh) *50);
+}
+
+.cat{
+    background-size: cover;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.row{
+    .cat{
+        position: relative;
+        background: $dBlue;
+        .cat-details{
+
+        }
+    }
+}

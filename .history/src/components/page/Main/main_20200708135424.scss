@@ -1,0 +1,10 @@
+//head
+@import "./../../../assets/style/module/variables.scss";
+#main{
+    height: 50vh;
+    height: calc(val(--vh,1vh)*50);
+    background-color: $dBlue;
+    .row{
+
+    }
+}
