@@ -25,7 +25,7 @@ function App() {
                 <Route exact path="/debriefs/" component={Home} />
                 <Route exact path="/debriefs/a-propos" component={Main} />
                 <Route exact path="/debriefs/services" component={Service} />
-                <Route exact path="/debriefs/details/:id" component={ServiceDetails} />
+                <Route exact path="/details/:id" component={ServiceDetails} />
                 <Route exact path="/debriefs/contact" component={Contact} />
                 <Route exact path="/webinaires" component={Contact} />
                 <Route exact path="/clients" component={Contact} />

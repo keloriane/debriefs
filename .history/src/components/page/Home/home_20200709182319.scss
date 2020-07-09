@@ -151,7 +151,7 @@
             display: flex;
             justify-content: space-around;
             max-width: 800px;
-            height: 445px;
+            height: 475px;
             flex-flow: column wrap;
             margin: auto;
             align-self:center;
@@ -186,11 +186,22 @@
 
             }
             .home-text{
+                line-height: 145%;
                 font-size: 16px;
-                font-weight: lighter;
-                color: $white;
-                line-height: 180%;
+                font-weight: 200;
+
                 
+                p{
+                    font-family: Inter;
+                    font-style: normal;
+           
+                    font-size: 22px;
+                    /* or 39px */
+
+                    letter-spacing: 0.05em;
+
+                    color: $white;
+                }
             }
             
         }

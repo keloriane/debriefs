@@ -4,7 +4,7 @@ import "./ServiceDetails.scss";
 
 const ServiceDetails = () => {
   let splitedUrl = window.location.href.split("/");
-  let position = splitedUrl[5];
+  let position = splitedUrl[4];
   return (
     <div className="details" id="service-details">
         <div className="service-details-wrapper">

@@ -151,7 +151,7 @@
             display: flex;
             justify-content: space-around;
             max-width: 800px;
-            height: 445px;
+            
             flex-flow: column wrap;
             margin: auto;
             align-self:center;
@@ -189,7 +189,6 @@
                 font-size: 16px;
                 font-weight: lighter;
                 color: $white;
-                line-height: 180%;
                 
             }
             
