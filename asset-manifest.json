@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/debriefs/static/css/main.8969c9c9.chunk.css",
-    "main.js": "/debriefs/static/js/main.1acfc5a8.chunk.js",
-    "main.js.map": "/debriefs/static/js/main.1acfc5a8.chunk.js.map",
+    "main.css": "/debriefs/static/css/main.97973984.chunk.css",
+    "main.js": "/debriefs/static/js/main.c753c511.chunk.js",
+    "main.js.map": "/debriefs/static/js/main.c753c511.chunk.js.map",
     "runtime-main.js": "/debriefs/static/js/runtime-main.62e649a7.js",
     "runtime-main.js.map": "/debriefs/static/js/runtime-main.62e649a7.js.map",
-    "static/js/2.8933b10b.chunk.js": "/debriefs/static/js/2.8933b10b.chunk.js",
-    "static/js/2.8933b10b.chunk.js.map": "/debriefs/static/js/2.8933b10b.chunk.js.map",
+    "static/js/2.33d94819.chunk.js": "/debriefs/static/js/2.33d94819.chunk.js",
+    "static/js/2.33d94819.chunk.js.map": "/debriefs/static/js/2.33d94819.chunk.js.map",
     "index.html": "/debriefs/index.html",
-    "precache-manifest.b3e4d02e5b9199a0e773f4502f53c3d6.js": "/debriefs/precache-manifest.b3e4d02e5b9199a0e773f4502f53c3d6.js",
+    "precache-manifest.248ca28f0cfd1110cea73493cdc24fee.js": "/debriefs/precache-manifest.248ca28f0cfd1110cea73493cdc24fee.js",
     "service-worker.js": "/debriefs/service-worker.js",
-    "static/css/main.8969c9c9.chunk.css.map": "/debriefs/static/css/main.8969c9c9.chunk.css.map",
-    "static/js/2.8933b10b.chunk.js.LICENSE.txt": "/debriefs/static/js/2.8933b10b.chunk.js.LICENSE.txt",
+    "static/css/main.97973984.chunk.css.map": "/debriefs/static/css/main.97973984.chunk.css.map",
+    "static/js/2.33d94819.chunk.js.LICENSE.txt": "/debriefs/static/js/2.33d94819.chunk.js.LICENSE.txt",
     "static/media/articles.png": "/debriefs/static/media/articles.ac8ebf27.png",
     "static/media/home.scss": "/debriefs/static/media/home.e6c49659.png",
     "static/media/team.png": "/debriefs/static/media/team.592ee162.png",
+    "static/media/test.png": "/debriefs/static/media/test.e748d543.png",
     "static/media/webinaires.png": "/debriefs/static/media/webinaires.4031a755.png"
   },
   "entrypoints": [
     "static/js/runtime-main.62e649a7.js",
-    "static/js/2.8933b10b.chunk.js",
-    "static/css/main.8969c9c9.chunk.css",
-    "static/js/main.1acfc5a8.chunk.js"
+    "static/js/2.33d94819.chunk.js",
+    "static/css/main.97973984.chunk.css",
+    "static/js/main.c753c511.chunk.js"
   ]
 }
