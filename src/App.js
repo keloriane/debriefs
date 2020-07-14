@@ -8,6 +8,7 @@ import Cursor from './components/Cursor/Cursor';
 import Main from "./components/page/Main/Main";
 import Service from './components/page/Service/Services'
 import ServiceDetails from './components/page/Service/ServiceDetails'
+import Webinaires from './components/page/Webinaire/Webinaires';
 
 
 
@@ -27,7 +28,7 @@ function App() {
                 <Route exact path="/debriefs/services" component={Service} />
                 <Route exact path="/debriefs/details/:id" component={ServiceDetails} />
                 <Route exact path="/debriefs/contact" component={Contact} />
-                <Route exact path="/webinaires" component={Contact} />
+                <Route exact path="/debriefs/webinaire" component={Webinaires} />
                 <Route exact path="/clients" component={Contact} />
               </Switch>
           </div>

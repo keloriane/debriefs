@@ -65,6 +65,7 @@ a{
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+  overflow: inherit;
   @include media('<=tablet'){
     height: 100%;
     width: 100%;

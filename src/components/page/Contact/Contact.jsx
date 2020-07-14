@@ -27,7 +27,7 @@ const Contact = () => {
 
 
     return(
-        <div id="contact-page">
+        <div id="contact-page" className="no-scroll">
              <div className="logo-layer">
                  <Link to="/debriefs/">
                         <svg width="84" height="482" viewBox="0 0 84 482" fill="none" xmlns="http://www.w3.org/2000/svg">

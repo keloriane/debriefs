@@ -4,6 +4,7 @@ import {withRouter} from "react-router-dom";
 import "./header.scss";
 import logo from "./../../assets/images/logo-Debriefs.png";
 import social from "./../../assets/images/SOCIAL.png";
+import {Link} from "react-router-dom";
 
 
 const Header = ({history}) => {
@@ -58,7 +59,10 @@ const Header = ({history}) => {
                 </div>
                 <div className="logo-container">
                     <div className="inner-logo">
+                      <Link to="/debriefs/">
                         <img src={logo} className="miniature" alt="mini-logo"/>
+                      
+                      </Link>
                     </div>
                 </div>
                 <div className="social">

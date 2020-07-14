@@ -51,10 +51,11 @@ useEffect(()=>{
             amount:0.4
         }
     })
+    .to(".intro-overlay", { duration: 0, css: { display: "none" } })
 
 })
     return (
-        <div id="about">
+        <div id="about" className="no-scroll">
             <IntroOverlay />
             <Head/>
             <Categories/>

@@ -1,17 +1,18 @@
 @import "./../../assets//style/module/breakpoints.scss";
 
-#page{
+
+.no-scroll {
     overflow: hidden;
 }
 
-.main-menu{
-    overflow: hidden;
+.main-menu {
+
     width: 100vw;
     height: 100vh;
     display: none;
-    
-    
-    .menu-secondary-layer{
+
+
+    .menu-secondary-layer {
         top: 0;
         bottom: 0;
         left: 0;
@@ -23,7 +24,8 @@
         z-index: 5;
         opacity: 0;
     }
-    .menu-layer{
+
+    .menu-layer {
         z-index: 6;
         width: 100%;
         height: 100%;
@@ -34,7 +36,8 @@
         align-items: center;
         justify-self: center;
         overflow: hidden;
-        .menu-container{
+
+        .menu-container {
             width: 1280px;
             height: 720px;
             margin: 0 auto;
@@ -42,16 +45,19 @@
             flex-flow: column wrap;
             justify-content: space-between;
             align-items: space-between;
-            .inner-menu-logo{
+
+            .inner-menu-logo {
                 text-align: center;
-                .menu-logo{
+
+                .menu-logo {
                     transform: rotateX(135deg);
                 }
             }
-            .menu-links{
-                nav{
-                    ul{
-                        li{
+
+            .menu-links {
+                nav {
+                    ul {
+                        li {
                             list-style: none;
                             font-size: 6rem;
                             font-weight: 700;
@@ -59,44 +65,59 @@
                             height: 54px;
                             overflow: hidden;
                             position: relative;
-                            a{
+
+                            a {
                                 font-family: "Inter";
                                 font-style: normal;
                                 font-weight: bold;
                                 font-size: 34px;
                                 line-height: 175.9%;
                                 /* or 60px */
-                                 text-transform: uppercase;                           
+                                text-transform: uppercase;
                                 text-align: center;
                                 letter-spacing: 0.05em;
                                 text-decoration: none;
                                 color: #FFFFFF;
                                 position: absolute;
-                                &:hover{
+
+                                &:hover {
                                     color: #85C3E6;
                                 }
-                                
+
                             }
                         }
                     }
                 }
             }
-            
+
         }
     }
-    
+
 }
 
+.button-techspace{
+    .line{
+        width: 200px;
+    }
+        a{
+            button{
+                width: 200px;
+                height: 60px;
+            }
+        }
+    }
+        
 
-.menu{
+.menu {
     z-index: 11;
 }
 
-.logo-min{
+.logo-min {
     margin-right: 15px;
-        @include media('<=tablet') {
-            display: none;
-            
-        
-        }
+
+    @include media('<=tablet') {
+        display: none;
+
+
+    }
 }

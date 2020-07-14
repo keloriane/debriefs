@@ -19,7 +19,7 @@ const Services = () => {
         
     })
   return (
-    <div id="services">
+    <div id="services" className="no-scroll">
       <div className="service-container">
         <div className="title-service">
           <h2>Nos Services</h2>
@@ -29,7 +29,7 @@ const Services = () => {
           {services.map((service) => (
               <Link to={`/debriefs/details/${service.id}`} key={service.id}>
                 <div className="service-item" >
-              <p className="number"> 0{service.id} /</p>
+              <p className="number"> 0{(service.id) + 1} /</p>
               <div className="headline-service">
                 <h3>{service.title}</h3>
               </div>

@@ -20,26 +20,25 @@ function Menu({state}) {
     let line2 = useRef(null);
     let line3 = useRef(null);
     let line4 = useRef(null);
-  
- 
-
-
     useEffect(()=> {
+      let page = document.getElementById('page')
+      
+      // If the menu is open and we click the menu button to close it.
+      if (state.clicked === false) {
+        // If menu is closed and we want to open it.
         
-    
-            // If the menu is open and we click the menu button to close it.
-            if (state.clicked === false) {
-              // If menu is closed and we want to open it.
+        staggerRevealClose(revealMenu,revealMenuBackground,menu);
+        // Set menu to display none
+        page.style.overflow = 'unset'
         
-              staggerRevealClose(revealMenu,revealMenuBackground,menu);
-              // Set menu to display none
-             
-            } else if (
-              state.clicked === true ||
-              (state.clicked === true && state.initial === null)
+      } else if (
+        state.clicked === true ||
+        (state.clicked === true && state.initial === null)
             ) {
               // Set menu to display block
               gsap.to(menu, { duration: 0, css: { display: "block" } });
+              page.style.overflow = 'hidden'
+              
               //Allow menu to have height of 100%
               gsap.to([revealMenuBackground, revealMenu], {
                 duration: 0,
@@ -49,41 +48,12 @@ function Menu({state}) {
               staggerReveal(revealMenuBackground, revealMenu);
               staggerText(line1, line2, line3, line4);
             }
+            else{
+              
+            }
           }, [state]);
-        
-        
-    //     if(state.clicked === false) {
-    //         //close
-    //         staggerRevealClose(revealMenu,revealMenuBackground);
-    //         // Set menu to display none
-    //         gsap.to(menu, { duration: 1, css: { display: "none" } });
-        
-            
-    //         //open it 
-            
-    //     } else if (
-    //         state.clicked === true ||
-    //         (state.clicked === true && state.initial === null)
-    //         ) 
-    //         {
-    //             gsap.to(menu, { duration: 0, css: { display: "block" } });
-    //             //Allow menu to have height of 100%
-    //             gsap.to([revealMenuBackground, revealMenu], {
-    //                 duration: 0,
-    //                 opacity: 1,
-    //                 height: "100%"
-    //             });
-    //             staggerReveal(revealMenuBackground, revealMenu);
-    //             staggerText(line1,line2,line3);   
-            
-            
-    //     }
-            
-        
-    // },[state]);
-
     return (
-        <div ref={el=>menu = el} className="main-menu">
+        <div ref={el=>menu = el} className="main-menu no-scroll">
             <div ref={el=>revealMenuBackground = el} className="menu-secondary-layer"> </div>
             <div ref={el=>revealMenu = el} className="menu-layer">
                 <div className="menu-container">
@@ -108,8 +78,18 @@ function Menu({state}) {
                                 <li> <Link ref={el=>line2 = el} to="/debriefs/a-propos"> à propos </Link> </li>
                                 <li> <Link ref={el=>line3 = el} to="/debriefs/services"> Services </Link> </li>
                                 <li> <Link ref={el=>line4 = el} to="/debriefs/contact"> Contact </Link> </li>
+                                <li> <Link  to="/debriefs/webinaires"> Webinaires </Link> </li>
                             </ul>
                         </nav>
+                    </div>
+            <div className="button-techspace">
+                        <div className="line"></div>
+                        <Link to="/techspace/">
+                            <button>
+                                <div className="button-overlay"></div>
+                                <p className="animated-button thar-three">l'asbl</p>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

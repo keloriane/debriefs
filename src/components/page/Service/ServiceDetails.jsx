@@ -6,7 +6,7 @@ const ServiceDetails = () => {
   let splitedUrl = window.location.href.split("/");
   let position = splitedUrl[5];
   return (
-    <div className="details" id="service-details">
+    <div className="details" id="service-details" className="no-scroll">
         <div className="service-details-wrapper">
 
         <div className="details-photo">
