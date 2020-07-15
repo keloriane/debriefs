@@ -1,25 +1,25 @@
 @import "./../../../assets/style/module/variables.scss";
 @import "./../../../assets/style/module/breakpoints.scss";
-#home{
+
+#home {
     background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #0D0D0D 0%, #020f18 100%);
     width: 95%;
     height: 100%;
     overflow: hidden;
-    @include media('<=tablet'){
+    @include media('<=tablet') {
         width: 100%;
     }
-    
-      
-
-    
-    nav{
-        ul{
+    nav {
+        ul {
             display: flex;
             justify-content: space-around;
-            li{
+            align-items: center;
+
+            li {
                 list-style: none;
-                a{
-                    font-family: "Inter";
+
+                a {
+                    font-family: "Proxima";
                     font-style: normal;
                     font-weight: bold;
                     font-size: 18px;
@@ -27,11 +27,12 @@
                     /* or 32px */
                     text-align: center;
                     letter-spacing: 0.05em;
-                     color: $white;
-                     text-transform: uppercase;
-                     text-decoration: none;
+                    color: $white;
+                    text-transform: uppercase;
+                    text-decoration: none;
                 }
-                button{
+
+                button {
                     position: relative;
                     width: 169px;
                     height: 49px;
@@ -44,30 +45,35 @@
             }
         }
     }
-    .left-gap{
+
+    .left-gap {
         background: none;
     }
-    .home-wrapper{
-        
-            width: 100%;
-            
+
+    .home-wrapper {
+
+        width: 100%;
+
         display: flex;
         height: 100%;
+
         @include media('<=tablet') {
             height: 100vh;
-            
-        
+
+
         }
-      
-        .left-gap{
+
+        .left-gap {
             width: 10%;
             background-color: $dBlue;
-                @include media('<=tablet'){
-                    display: none;
-                }
-    
+
+            @include media('<=tablet') {
+                display: none;
+            }
+
         }
-        .image-layer{
+
+        .image-layer {
             width: 100%;
             max-width: 235px;
             height: 100vh;
@@ -76,54 +82,63 @@
             background-size: contain;
             position: relative;
             background-attachment: fixed;
-            @include media('<=tablet'){
+
+            @include media('<=tablet') {
                 display: none;
             }
-            .blue-layer{
-                
+
+            .blue-layer {
+
                 width: 100%;
                 max-width: 320px;
                 height: 100vh;
                 position: absolute;
                 top: 0;
                 background: linear-gradient(235.9deg, rgba(0, 0, 0, 0.31) 11.1%, rgba(133, 195, 230, 0.31) 98.28%);
-                @include media('<=tablet'){
+
+                @include media('<=tablet') {
                     display: none;
                 }
             }
-            .logo-layer{
+
+            .logo-layer {
                 z-index: 1;
                 position: absolute;
                 left: -14%;
                 top: 31%;
             }
 
-        
+
         }
-        .center-home-content{
+
+        .center-home-content {
             width: 100%;
             display: flex;
             flex-direction: column;
-            .button-container{
-                
+
+            .button-container {
+
                 height: 200px;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
                 margin-right: 92px;
-                @include media('<=phone'){
+
+                @include media('<=phone') {
                     margin: 0 auto;
                 }
 
-                .line{
+                .line {
                     width: 120px;
-                    border:.5px solid $white;
+                    border: .5px solid $white;
                     margin-right: 10px;
-                    @include media('<=phone'){
+
+                    @include media('<=phone') {
                         display: none;
                     }
                 }
-                button{
+
+                button {
                     width: 269px;
                     height: 73px;
                     border: 1px solid $white;
@@ -136,15 +151,18 @@
                     position: relative;
                     transition: all .5s ease-in;
                     overflow: hidden;
-                    &:hover{
+
+                    &:hover {
                         transition: all .5s ease-in;
-                        .button-overlay{
+
+                        .button-overlay {
                             transition: all .2s ease-in;
                             transform: translateX(0%);
-                            
+
                         }
                     }
-                    .button-overlay{
+
+                    .button-overlay {
                         position: absolute;
                         transform: translateX(-100%);
                         top: -1px;
@@ -153,11 +171,12 @@
                         height: 73px;
                         background-color: $white;
                         transition: all .5s ease-in;
-                        
+
                     }
-                    a{
-                        
-                        font-family: Inter;
+
+                    a {
+
+                        font-family: "Proxima";
                         font-style: normal;
                         font-weight: normal;
                         font-size: 24px;
@@ -171,111 +190,124 @@
                         color: $white;
 
                     }
-    
-    
+
+
                 }
             }
-            
+
 
         }
-        .home-content{
+
+        .home-content {
             display: flex;
             justify-content: space-evenly;
             max-width: 800px;
-            height: 100%;
+            height: 55%;
+            max-height: 450px;
             flex-flow: column wrap;
             margin: auto;
-            align-self:center;
-            @include media('<=tablet'){
+            align-self: center;
+
+            @include media('<=tablet') {
                 margin: 0;
             }
-            .home-title{
-                @include media('<=phone'){
+
+            .home-title {
+                @include media('<=phone') {
                     text-align: center;
                 }
-                h1{
-                    font-family: "Inter";
-                    font-style: normal;
-                    font-weight: 600;
+
+                h1 {
+                    font-family: $proxyL;
+                    font-weight: 100;
                     font-size: 52px;
                     line-height: 175.9%;
                     /* or 91px */
                     letter-spacing: 0.05em;
                     text-transform: uppercase;
                     color: $white;
-                    @include media('<=phone'){
+
+                    @include media('<=phone') {
                         font-size: 22px;
 
                     }
 
                 }
             }
-            .home-subtitle{
-                @include media('<=tablet'){
+
+            .home-subtitle {
+                @include media('<=tablet') {
                     width: 100%;
                     margin: 0 auto;
                 }
-                @include media('<=phone'){
+
+                @include media('<=phone') {
                     width: 320px;
                     margin: 0 auto;
                 }
-                h3{
 
-                    font-family: Inter;
+                h3 {
+
+                    font-family: "Proxima";
                     font-style: normal;
                     font-weight: 1;
                     font-size: 22px;
                     line-height: 175.9%;
                     /* or 39px */
-    
+
                     letter-spacing: 0.05em;
-                    text-transform: uppercase;            
+                    text-transform: uppercase;
                     color: $lBlue;
-                    @include media('<=phone'){
+
+                    @include media('<=phone') {
                         font-size: 16px;
                         letter-spacing: normal;
                     }
                 }
 
             }
-            .home-text{
+
+            .home-text {
                 font-size: 16px;
                 font-weight: lighter;
                 color: $white;
-                line-height: 180%;
-                @include media('<=phone'){
+                line-height: 200%;
+
+                @include media('<=phone') {
                     width: 300px;
                     margin: 0 auto;
                 }
-                
+
             }
-            
+
         }
     }
 }
 
-@media screen and (max-width:1100px){
-    .home-nav{
+@media screen and (max-width:1100px) {
+    .home-nav {
         display: none;
     }
 }
-@media screen and (min-width:1280px){
-    #home .home-wrapper .left-gap{
+
+@media screen and (min-width:1280px) {
+    #home .home-wrapper .left-gap {
         width: 15%;
     }
 }
 
-.underline{
+.underline {
     width: 100%;
     max-width: 450px;
     border: .5px solid $lBlue;
-    @include media('<=tablet'){
-        width: 200px;   
-}
+
+    @include media('<=tablet') {
+        width: 200px;
+    }
 }
 
 
-button{
+button {
     width: 269px;
     height: 73px;
     border: 1px solid white;
@@ -288,15 +320,18 @@ button{
     position: relative;
     transition: all .5s ease-in;
     overflow: hidden;
-    &:hover{
+
+    &:hover {
         transition: all .5s ease-in;
-        .button-overlay{
+
+        .button-overlay {
             transition: all .2s ease-in;
             transform: translateX(0%);
-            
+
         }
     }
-    .button-overlay{
+
+    .button-overlay {
         position: absolute;
         transform: translateX(-100%);
         top: -1px;
@@ -305,11 +340,12 @@ button{
         height: 73px;
         background-color: white;
         transition: all .5s ease-in;
-        
+
     }
-    p{
-        
-        font-family: Inter;
+
+    p {
+
+        font-family: "Proxima";
         font-style: normal;
         font-weight: normal;
         font-size: 24px;

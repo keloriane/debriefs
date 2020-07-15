@@ -45,3 +45,36 @@
         paragraphBreak: "Webinaire & E-learning",
         image: `${require("./assets/images/test.png")}`
   }]
+
+export const team = [
+  {
+    id:1,
+    name:"Ornella",
+    lastName:"Pam",
+    photo:`${require('./assets/images/image9.png')}`
+  },
+  {
+    id:2,
+    name:"Simba",
+    lastName:"Ornella",
+    photo:`${require('./assets/images/Ornella.png')}`
+  },
+  {
+    id:3,
+    name:"Gerbino",
+    lastName:"Pamela",
+    photo:`${require('./assets/images/pam.png')}`
+  },
+  {
+    id:3,
+    name:"Phil",
+    lastName:"Philippe",
+    photo:`${require('./assets/images/phil.png')}`
+  },
+  {
+    id:4,
+    name:"Mangolu",
+    lastName:"Abel",
+    photo:`${require('./assets/images/abel.png')}`
+  },
+]

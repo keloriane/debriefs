@@ -52,9 +52,9 @@ const Header = ({history}) => {
                 <div className="wrapper">
                 <div className="hamburger-menu">
                     <div className="menu" id="burger" ref={ e=> burgerIcon = e}onClick={handleMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span className="burger-line"></span>
+                    <span className="burger-line"></span>
+                    <span className="burger-line"></span>
                     </div>
                 </div>
                 <div className="logo-container">

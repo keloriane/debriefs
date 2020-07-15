@@ -3,6 +3,7 @@ import "./home.scss";
 import { Link } from 'react-router-dom'
 import gsap from 'gsap';
 import homeBg from "./../../../assets/images/home.png";
+import {Transition, TransitionGroup} from "react-transition-group"
 
 export default function Home() {
 
@@ -18,19 +19,16 @@ export default function Home() {
     let button = useRef(null)
     let nav = useRef(null);
     let lines = []
-
-    useEffect(() => {
-
+    const pathLogo = document.querySelectorAll(".logo-letter");
 
 
-        const pathLogo = document.querySelectorAll(".logo-letter");
 
-        console.log(lines);
+    let homeTl = gsap.timeline({ delay: "0.8" })
 
-        console.log(pathLogo);
-        let homeTl = gsap.timeline({ delay: "0.8" })
+    const onEnter = () => {
+
         homeTl
-
+    
             .from(imageGap, .4, { backgroundPositionX: "-30%", delay: -.6 })
             .from(pathLogo, .3, {
                 duration: 0.8,
@@ -51,6 +49,16 @@ export default function Home() {
             })
             .from(underline, .6, { width: 0, autoAlpha: 0, delay: -.5 })
         // .from(blueLayer,.3,{x:"-20%", opacity:0, delay:-.6})
+    }
+
+    useEffect(() => {
+
+
+
+
+        console.log(lines);
+
+        console.log(pathLogo);
     }, [])
 
     const imageLayer = {
@@ -59,6 +67,18 @@ export default function Home() {
         backgroundImage: "url(" + { homeBg } + ")"
     };
     return (
+      
+
+        <Transition
+            in={true}
+            timeout={1000}
+            mountOnEnter
+            timeout={1000}
+            onEntering={(node) => console.log(node)}
+            
+            
+            >
+
         <div id="home" ref={e => home = e} className="no-scroll">
             <div className="home-wrapper">
                 <div className="left-gap" ref={e => leftGap = e}></div>
@@ -117,5 +137,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        </Transition>
+         
     )
 }
