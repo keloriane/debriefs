@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/debriefs/static/css/main.27598f62.chunk.css",
-    "main.js": "/debriefs/static/js/main.1c6e557d.chunk.js",
-    "main.js.map": "/debriefs/static/js/main.1c6e557d.chunk.js.map",
-    "runtime-main.js": "/debriefs/static/js/runtime-main.fc85a9b7.js",
-    "runtime-main.js.map": "/debriefs/static/js/runtime-main.fc85a9b7.js.map",
-    "static/js/2.8f6baa7a.chunk.js": "/debriefs/static/js/2.8f6baa7a.chunk.js",
-    "static/js/2.8f6baa7a.chunk.js.map": "/debriefs/static/js/2.8f6baa7a.chunk.js.map",
+    "main.css": "/debriefs/static/css/main.a099336f.chunk.css",
+    "main.js": "/debriefs/static/js/main.5b1daf9b.chunk.js",
+    "main.js.map": "/debriefs/static/js/main.5b1daf9b.chunk.js.map",
+    "runtime-main.js": "/debriefs/static/js/runtime-main.62e649a7.js",
+    "runtime-main.js.map": "/debriefs/static/js/runtime-main.62e649a7.js.map",
+    "static/js/2.2c6f89e6.chunk.js": "/debriefs/static/js/2.2c6f89e6.chunk.js",
+    "static/js/2.2c6f89e6.chunk.js.map": "/debriefs/static/js/2.2c6f89e6.chunk.js.map",
     "index.html": "/debriefs/index.html",
-    "precache-manifest.c6fbce16b8ce0504047b4b1e5af83dd1.js": "/debriefs/precache-manifest.c6fbce16b8ce0504047b4b1e5af83dd1.js",
+    "precache-manifest.950d64f2b961339d3e34aa720c5059f8.js": "/debriefs/precache-manifest.950d64f2b961339d3e34aa720c5059f8.js",
     "service-worker.js": "/debriefs/service-worker.js",
-    "static/css/main.27598f62.chunk.css.map": "/debriefs/static/css/main.27598f62.chunk.css.map",
-    "static/js/2.8f6baa7a.chunk.js.LICENSE.txt": "/debriefs/static/js/2.8f6baa7a.chunk.js.LICENSE.txt",
+    "static/css/main.a099336f.chunk.css.map": "/debriefs/static/css/main.a099336f.chunk.css.map",
+    "static/js/2.2c6f89e6.chunk.js.LICENSE.txt": "/debriefs/static/js/2.2c6f89e6.chunk.js.LICENSE.txt",
     "static/media/Ornella.png": "/debriefs/static/media/Ornella.69a7320e.png",
     "static/media/techspace.scss": "/debriefs/static/media/ProximaNova-Regular.bf9f5d50.otf",
     "static/media/abel.png": "/debriefs/static/media/abel.059127e9.png",
@@ -27,9 +27,9 @@
     "static/media/webinaires.png": "/debriefs/static/media/webinaires.4031a755.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fc85a9b7.js",
-    "static/js/2.8f6baa7a.chunk.js",
-    "static/css/main.27598f62.chunk.css",
-    "static/js/main.1c6e557d.chunk.js"
+    "static/js/runtime-main.62e649a7.js",
+    "static/js/2.2c6f89e6.chunk.js",
+    "static/css/main.a099336f.chunk.css",
+    "static/js/main.5b1daf9b.chunk.js"
   ]
 }
