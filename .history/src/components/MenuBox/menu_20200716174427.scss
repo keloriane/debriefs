@@ -1,0 +1,86 @@
+@import "./../../assets/style/module/variables.scss";
+@media screen and (min-width: 53em) {
+  .menu-box {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    display: grid;
+    top: 0;
+    left: 0;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "item3 item2 item1"
+      "item4 item5 item1";
+    z-index: 12;
+    display:none
+      .menu__item {
+          overflow: hidden;
+          &.menu__item1 {
+              
+              background: $dBlue;
+              grid-area: item1;
+              transform: translateY(-100%);
+            }
+            &.menu__item2 {
+                background: $dBlue;
+                
+                transform: translateX(-170%);
+                grid-area: item2;
+            }
+            &.menu__item3 {
+                background: $dBlue;
+                
+                transform: translateX(-100%);
+                grid-area: item3;
+            }
+            &.menu__item4 {
+                background: $dBlue;
+                grid-area: item4;
+                transform: translateX(-100%);
+              
+            }
+            &.menu__item5 {
+                grid-area: item5;
+                transform: translateY(-100%);
+                overflow: hidden;
+              
+            }
+        }
+          
+      .menu__item-inner {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        height: 100%;
+        a {
+          font-size: 5vw;
+          overflow: visible;
+          margin: 0.5rem 0;
+          padding: 0 0.5rem;
+          position: relative;
+          transition: color 0.3s;
+          color: $white;
+        }
+      }
+    }
+  }
+
+
+
+// .menu-box {
+//     text-align: center;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 200;
+//     display: grid;
+//     grid-template-columns: 100%;
+//     grid-template-rows: repeat(3,33.33%);
+//     pointer-events: none;
+// }

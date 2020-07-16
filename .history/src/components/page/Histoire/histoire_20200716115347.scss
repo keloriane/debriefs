@@ -1,0 +1,35 @@
+#story{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#our-story {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    width: 95%;
+
+    .text-story-container {
+        font-style: normal;
+        
+        font-size: 19px;
+        line-height: 162.3%;
+        /* or 31px */
+        color: #717171;
+        height: 478px;
+        max-width: 530px;
+        width: 100%;
+        display: flex;
+        align-items: space-between;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+
+}
+.techspace-team{
+    display: flex;
+    justify-content: space-around;
+}
