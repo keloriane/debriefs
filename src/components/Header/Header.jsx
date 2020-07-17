@@ -52,20 +52,20 @@ const Header = (props) => {
       setMenuOpen(!menuOpen)
       if(menuOpen === false) {
         gsap.to(".menu-box", { duration: 0, css: { display: "grid", zIndex:12 } })
-        gsap.to(".menu__item1",{ duration:.5, y:"0%"})
-        gsap.to(".menu__item2",{ duration:.5, x:"0%"})
-        gsap.to(".menu__item3",{ duration:.5, x:"0%"})
-        gsap.to(".menu__item4",{ duration:.5, x:"0%"})
-        gsap.to(".menu__item5",{ duration:.5, y:"0%"})
-        gsap.to(".menu-box", { duration: .001, css: { zIndex:12 } })
+        gsap.to(".menu__item1",{ ease:"expo.easeInOut", duration:.5, y:"0%"})
+        gsap.to(".menu__item2",{ ease:"expo.easeInOut", duration:.5, x:"0%"})
+        gsap.to(".menu__item3",{ ease:"expo.easeInOut", duration:.5, x:"0%"})
+        gsap.to(".menu__item4",{ ease:"expo.easeInOut", duration:.5, y:"0%"})
+        gsap.to(".menu__item5",{ ease:"expo.easeInOut", duration:.5, y:"0%"})
+        gsap.to(".menu-box", { ease:"expo.easeInOut", duration: .001, css: { zIndex:12 } })
         
       }
       else if(menuOpen === true){
         gsap.to(".menu__item1",{ duration:.5, y:"-100%"})
         gsap.to(".menu__item2",{ duration:.5, x:"-170%"})
         gsap.to(".menu__item3",{ duration:.5, x:"-100%"})
-        gsap.to(".menu__item4",{ duration:.5, x:"-100%"})
-        gsap.to(".menu__item5",{ duration:.5, y:"-100%"})
+        gsap.to(".menu__item4",{ duration:.5, y:"100%"})
+        gsap.to(".menu__item5",{ duration:.5, y:"0%"})
         gsap.to(".menu-box", { duration: .5, css: { zIndex:-1 } })
         
       }
@@ -78,8 +78,8 @@ const Header = (props) => {
       .to(".menu__item1",{ duration:.2, y:"-100%"})
       .to(".menu__item2",{ duration:.2, delay:-2,  x:"-170%"})
       .to(".menu__item3",{ duration:.2,delay:-2, x:"-100%"})
-      .to(".menu__item4",{ duration:.2,delay:-2, x:"-100%"})
-      .to(".menu__item5",{ duration:.2,delay:-2, y:"-100%"})
+      .to(".menu__item4",{ duration:.2,delay:-2, y:"100%"})
+      .to(".menu__item5",{ duration:.2,delay:-2, y:"100%"})
       .to(".menu-box", { duration:.2 , css: {zIndex:-1 } })
       menuTl.play();
       setMenuOpen(false)
@@ -126,6 +126,9 @@ const Header = (props) => {
             services={<Link onClick={e => changePage(e , "/debriefs/services")} >Services</Link>}
             webinaires={<Link onClick={e => changePage(e , "/debriefs/webinaire")} >Webinaires</Link>}
             contact={<Link onClick={e => changePage(e , "/debriefs/contact")} >Contact</Link>}
+            histoire={<Link onClick={e => changePage(e , "/techspace/histoire")} >Notre Histoire</Link>}
+            agence={<Link onClick={e => changePage(e , "/debriefs/")} >l' agence</Link>}
+            asbl={<Link onClick={e => changePage(e , "/techspace/")} >l' asbl</Link>}
 
             
             
