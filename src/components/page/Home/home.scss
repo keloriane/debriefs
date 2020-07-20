@@ -200,21 +200,24 @@
 
         .home-content {
             display: flex;
-            justify-content: space-evenly;
+            
             max-width: 800px;
             height: 55%;
-            max-height: 450px;
-            flex-flow: column wrap;
+            max-height: 434px;
+            flex-flow: row wrap;
             margin: auto;
             align-self: center;
-
+            max-width: 694px;
+            width: 100%;
             @include media('<=tablet') {
-                margin: 0;
+                margin: 100px;
             }
 
             .home-title {
+
                 @include media('<=phone') {
-                    text-align: center;
+                    
+
                 }
 
                 h1 {

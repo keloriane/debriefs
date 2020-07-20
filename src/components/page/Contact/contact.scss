@@ -5,10 +5,13 @@
   height: 100%;
   display: flex;
   align-items: center;
+  
   background:$gradient;
   @include media("<=tablet") {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
+    overflow: initial;
+    padding-bottom: 80%;
   }
   .logo-layer {
     width: 200px;
@@ -22,15 +25,15 @@
   #contact-wrapper {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    
+    margin: 100px auto;
+    height: auto;
     padding: 40px;
     @include media("<=tablet") {
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      margin: 0 auto;
+      height: 75%;
+      margin: 87px auto;
     }
     .page-title {
       height: 210px;
@@ -62,7 +65,7 @@
       }
     }
     .contact-form {
-      height: 485px;
+      height: 585px;
       form {
         @include media("<=tablet") {
           display: flex;
@@ -88,8 +91,26 @@
           text-transform: uppercase;
           color: #ffffff;
           @include media("<=tablet") {
-            font-size: 16px;
+            font-size: 12px;
           }
+        }
+        textarea{
+          width: 33px;
+          height: 35px;
+          border: 1px solid #ffffff;
+          box-sizing: border-box;
+          background: none;
+          color: white;
+          margin: 0px;
+          max-width: 745px;
+          width: 100%;
+          height: 358px;
+          @include media("<=tablet") {
+            height:130px;
+            width: 100%;
+            
+          }
+
         }
         input {
           width: 363px;
@@ -107,10 +128,12 @@
             height: 270px;
             @include media("<=tablet") {
               width: 250px;
+              
             }
           }
         }
       }
+
       .name-lastname-form {
         display: flex;
         justify-content: space-between;
@@ -121,6 +144,7 @@
       }
     }
   }
+ 
   .button-call {
     display: flex;
     justify-content: flex-end;

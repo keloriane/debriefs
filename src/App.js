@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Contact from './components/page/Contact/Contact.jsx';
@@ -13,6 +13,7 @@ import Techspace from './components/page/Techspace/Techspace';
 import {CSSTransition} from 'react-transition-group';
 import Histoire from './components/page/Histoire/Histoire';
 import MenuBox from "./components/MenuBox/MenuBox";
+import Loader from "./components/Loader/Loader"
 
 
 const routes = [
@@ -28,14 +29,34 @@ const routes = [
 ]
 
 function App() {
+
+
+  const [loaded, setLoaded] = useState(false)
+
+
+
+
+
+
   useEffect(() => {
+
+
+
+    setTimeout(()=>{
+      setLoaded(true)
+    }, 2500)
+
+
+
+
     const page = window.location.href.split('/');
     let vh = window.innerHeight * 0.1;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     let webPage = document.getElementById('page')
     let header = document.getElementsByClassName('header-container')
     let lines = document.querySelectorAll('.burger-line')
-    if (page[3] === "techspace") {
+    if (page[3] === "techspace" & loaded === true) {
+
         webPage.style.background = 'none'
         webPage.style.backgroundColor = 'white'
         webPage.style.color = 'black'
@@ -50,7 +71,10 @@ function App() {
 
   return (
     <HashRouter basename="/">
-      <div className="App" id="page">
+
+
+      { loaded ?
+        <div className="App" id="page">
         <Cursor />
         <Header />
         <Switch>
@@ -73,6 +97,13 @@ function App() {
           ))}
         </Switch>
       </div>
+      
+      
+      
+      :  <Loader /> 
+      
+    
+      }
 
     </HashRouter>
   );

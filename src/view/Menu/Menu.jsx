@@ -43,6 +43,7 @@ const  Menu = ({state},props) => {
         // Set menu to display none
         page.style.overflow = 'unset'
         
+        
       } else if (
         state.clicked === true ||
         (state.clicked === true && state.initial === null)
@@ -62,7 +63,7 @@ const  Menu = ({state},props) => {
                 duration: 0.8,
                 height: 0,
                 transformOrigin: "right top",
-                ease: "power3   .inOut",
+                ease: "power3.inout",
                 stagger: {
                   amount: 0.1
                 }
@@ -103,6 +104,7 @@ const  Menu = ({state},props) => {
 
                     </div>
                     <div className="menu-links">
+                      <div className="vertical-menu-line"></div>
                         <nav>
                             <ul>
                                 <li> <Link  ref={el=>line1 = el} to="/debriefs/"> Accueil </Link> </li>

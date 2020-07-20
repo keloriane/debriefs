@@ -5,6 +5,7 @@
     overflow: hidden;
 }
 
+
 .main-menu {
 
     width: 100vw;
@@ -48,14 +49,38 @@
 
             .inner-menu-logo {
                 text-align: center;
+                @include media('<=tablet'){
+                    text-align:left;
+                }
+                svg{
 
-                .menu-logo {
-                    transform: rotateX(135deg);
+                    @include media('<=tablet'){
+                        width: 250px;
+                    }
                 }
             }
-
+            
+            .menu-logo {
+                transform: rotateX(135deg);
+            }
+            
             .menu-links {
+                display: flex;
+                max-width: 500px;
+                width: 100%;
+                justify-content: space-around;
+                
+                .vertical-menu-line{
+                    height: 100%;
+                    border: .5px solid white;
+                }
+                
                 nav {
+                    max-width: 350px;
+                    width: 100%;
+                            @include media('<=tablet'){
+                                width: 320px;
+                            }
                     ul {
                         li {
                             list-style: none;

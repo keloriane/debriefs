@@ -96,7 +96,7 @@ const Contact = (props) => {
                         <div className="text-form  ">
                             <div className="text-input form-input">
                                 <label> Votre projet / vos Questions  </label>
-                                <input className="long-text" type="text" />
+                                <textarea className="long-text" type="text" />
                             </div>
                         </div>
                         <div className="button-call">

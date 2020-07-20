@@ -9,6 +9,9 @@
       display: flex;
       justify-content: flex-end;
       width: 95%;
+      @include media('<=tablet'){
+        display: none;
+      }
       nav {
           display: flex;
           max-width: 720px;
@@ -53,6 +56,9 @@
       left: -50px;
       z-index: 3;
       top: -50px;
+      @include media('<=tablet'){
+        display: none;
+      }
     }
 
     .screen-video {
@@ -60,7 +66,8 @@
       position: relative;
       width: 100%;
       video {
-        width: 778px;
+        max-width: 778px;
+        width: 100%;
       }
     }
   }
@@ -79,6 +86,12 @@
       width: 272px;
       padding: 10px;
       overflow: hidden;
+      @include media('<=tablet'){
+        position: relative;
+        display: block;
+        left: 0;
+        top: 0;
+      }
 
       h1 {
         color: $white;
