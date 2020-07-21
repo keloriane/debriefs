@@ -34,10 +34,11 @@ const  Menu = ({state},props) => {
     const menuTl = gsap.timeline({paused: true})
     useEffect(()=> {
       let page = document.getElementById('page')
-      
       // If the menu is open and we click the menu button to close it.
+      let menuItems = document.querySelectorAll('.menu__links')
       if (state.clicked === false) {
         // If menu is closed and we want to open it.
+        
         
         staggerRevealClose(revealMenu,revealMenuBackground,menu);
         // Set menu to display none
@@ -68,7 +69,7 @@ const  Menu = ({state},props) => {
                   amount: 0.1
                 }
               })
-              .from([line1, line2, line3, line4, line5], {
+              .from([menuItems,"menu__item:before"], {
                 duration: 0.8,
                 y: "100%",
                 delay: -0.8,
@@ -106,12 +107,12 @@ const  Menu = ({state},props) => {
                     <div className="menu-links">
                       <div className="vertical-menu-line"></div>
                         <nav>
-                            <ul>
-                                <li> <Link  ref={el=>line1 = el} to="/debriefs/"> Accueil </Link> </li>
-                                <li> <Link ref={el=>line2 = el} to="/debriefs/a-propos"> à propos </Link> </li>
-                                <li> <Link ref={el=>line3 = el} to="/debriefs/services"> Services </Link> </li>
-                                <li> <Link ref={el=>line4 = el} to="/debriefs/contact"> Contact </Link> </li>
-                                <li> <Link ref={el=>line5 = el} to="/debriefs/webinaire"> Webinaires </Link> </li>
+                            <ul className="mainmenu">
+                                <li className="menu__item" > <Link  ref={el=>line1 = el} className="menu__links" to="/debriefs/"> Accueil </Link> </li>
+                                <li className="menu__item" > <Link  ref={el=>line2 = el} className="menu__links" to="/debriefs/a-propos"> à propos </Link> </li>
+                                <li className="menu__item" > <Link  ref={el=>line3 = el} className="menu__links" to="/debriefs/services"> Services </Link> </li>
+                                <li className="menu__item" > <Link  ref={el=>line4 = el} className="menu__links" to="/debriefs/contact"> Contact </Link> </li>
+                                <li className="menu__item" > <Link  ref={el=>line5 = el} className="menu__links" to="/debriefs/webinaire"> Webinaires </Link> </li>
                             </ul>
                         </nav>
                     </div>

@@ -14,6 +14,7 @@ import {CSSTransition} from 'react-transition-group';
 import Histoire from './components/page/Histoire/Histoire';
 import MenuBox from "./components/MenuBox/MenuBox";
 import Loader from "./components/Loader/Loader"
+import Footer from './components/page/Footer/Footer';
 
 
 const routes = [
@@ -60,7 +61,7 @@ function App() {
         webPage.style.background = 'none'
         webPage.style.backgroundColor = 'white'
         webPage.style.color = 'black'
-        header[0].style.background = 'radial-gradient(80.27% 180.6% at 9.33% 71.2%, #0D0D0D 0%, #020f18 100%)'
+        header[0].style.backgroundColor = '#020f18'
         header[0].style.color = 'white'
         lines[0].style.backgroundColor="white"
         lines[1].style.backgroundColor="white"
@@ -73,7 +74,7 @@ function App() {
     <HashRouter basename="/">
 
 
-      { loaded ?
+      {/* { loaded ? */}
         <div className="App" id="page">
         <Cursor />
         <Header />
@@ -96,14 +97,15 @@ function App() {
 
           ))}
         </Switch>
+        <Footer />
       </div>
       
       
-      
+{/*       
       :  <Loader /> 
       
     
-      }
+      } */}
 
     </HashRouter>
   );

@@ -1,4 +1,5 @@
 @import "./../../assets//style/module/breakpoints.scss";
+@import "./../../assets//style/module/variables.scss";
 
 
 .no-scroll {
@@ -11,6 +12,9 @@
     width: 100vw;
     height: 100vh;
     display: none;
+
+    counter-reset: menuitem;
+
 
 
     .menu-secondary-layer {
@@ -49,89 +53,124 @@
 
             .inner-menu-logo {
                 text-align: center;
-                @include media('<=tablet'){
-                    text-align:left;
-                }
-                svg{
 
-                    @include media('<=tablet'){
+                @include media('<=tablet') {
+                    text-align: left;
+                }
+
+                svg {
+
+                    @include media('<=tablet') {
                         width: 250px;
                     }
                 }
             }
-            
+
             .menu-logo {
                 transform: rotateX(135deg);
             }
-            
+
             .menu-links {
                 display: flex;
                 max-width: 500px;
                 width: 100%;
                 justify-content: space-around;
-                
-                .vertical-menu-line{
+
+                .vertical-menu-line {
                     height: 100%;
                     border: .5px solid white;
                 }
-                
+
                 nav {
                     max-width: 350px;
                     width: 100%;
-                            @include media('<=tablet'){
-                                width: 320px;
-                            }
+
+                    @include media('<=tablet') {
+                        width: 320px;
+                    }
+
                     ul {
                         li {
                             list-style: none;
-                            font-size: 6rem;
+                            font-size: 2rem;
                             font-weight: 700;
                             cursor: pointer;
                             height: 54px;
                             overflow: hidden;
                             position: relative;
 
-                            a {
-                                font-family: "Proxima";
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 34px;
-                                line-height: 175.9%;
-                                /* or 60px */
-                                text-transform: uppercase;
-                                text-align: center;
-                                letter-spacing: 0.05em;
-                                text-decoration: none;
-                                color: #FFFFFF;
-                                position: absolute;
-
-                                &:hover {
-                                    color: #85C3E6;
-                                }
-
-                            }
+                            
                         }
                     }
                 }
             }
-
+            
         }
     }
 
 }
 
-.button-techspace{
-    .line{
+
+
+.mainmenu {
+    counter-reset: menuitem;
+    display: flex;
+    flex-flow: column;
+    .menu__item {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        a{
+            transform: translateY(-37px);
+            display: block;
+            font-family: "Proxima";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 175.9%;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            /* position: absolute; */
+            /* overflow: visible; */
+            /* margin: 0.5rem 0; */
+            padding: 0 0.5rem;
+            /* position: relative; */
+            transition: color 0.3s;
+            color: #ffffff;
+        
+            &:hover {
+                color: $lBlue;
+            }
+
+        }
+        &:before {
+            counter-increment: menuitem;
+            content: counters(menuitem, "");
+           
+            font-size: 0.85rem;
+            top: 25%;
+            left: -1.25rem;
+            color: white;
+        }
+
+
+    }
+}
+.button-techspace {
+    .line {
         width: 200px;
     }
-        a{
-            button{
-                width: 200px;
-                height: 60px;
-            }
+    
+    a {
+        button {
+            width: 200px;
+            height: 60px;
         }
     }
-        
+}
+
 
 .menu {
     z-index: 11;

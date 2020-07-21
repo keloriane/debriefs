@@ -3,7 +3,8 @@ import "./home.scss";
 import { Link , withRouter } from 'react-router-dom'
 import gsap from 'gsap';
 import homeBg from "./../../../assets/images/home.png";
-import {Transition, TransitionGroup} from "react-transition-group"
+import {Transition, TransitionGroup} from "react-transition-group";
+import Nav from './../../Nav/Nav';
 
 const Home = (props) => {
 
@@ -82,14 +83,15 @@ const Home = (props) => {
                     <div className="blue-layer" ref={e => blueLayer = e} ></div>
                 </div>
                 <div className="center-home-content" ref={e => rightGap = e} >
-                    <nav className="home-nav">
+                    {/* <nav className="home-nav">
                         <ul>
                             <li><Link onClick={e => changePage(e , "/debriefs/services")} to="/debriefs/services">SERVICES</Link></li>
                             <li><Link onClick={e => changePage(e , "/techspace/menubox/")}>WEBINAIRES</Link></li>
                             <li><Link onClick={e => changePage(e , "/techspace/")}>TECHSPACE</Link></li>
                             <li><button>NewsLetter</button></li>
                         </ul>
-                    </nav>
+                    </nav> */}
+                    <Nav animation={e => changePage(e , "/debriefs/services")} animation1={e => changePage(e , "/debriefs/about")} animation2={e => changePage(e , "/techspace/")} />
                     <div className="home-content">
                         <div className="home-title">
                             <h1 ref={e => line1 = e}>AGENCE DIGITALE</h1>
@@ -107,7 +109,6 @@ const Home = (props) => {
                             <p>Avec nous, grâce à nos services et formations, le digital deviendra pour vous plus clair et simple à gérer.</p>
                             <p>Nous sommes également une agence solidaire, au travers de notre ASBL Le TECHSPACE, nous souhaitons fournir notre expertise aux plus grands nombre.</p>
                         </div>
-                    </div>
                     <div className="button-container">
                         <div className="line"></div>
                         <Link onClick={e => changePage(e , "/debriefs/contact")} to="/debriefs/contact">
@@ -116,6 +117,7 @@ const Home = (props) => {
                                 <p className="animated-button thar-three">Parlons digital</p>
                             </button>
                         </Link>
+                    </div>
                     </div>
                 </div>
             </div>

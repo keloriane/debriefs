@@ -2,123 +2,65 @@
 @import "./../../../assets/style/module/variables.scss";
 @import "./../../../assets/style/module/breakpoints.scss";
 
-#about {
-  overflow: hidden;
+
+
+#main-about-page {
+  display: flex;
+  color: $white;
+  justify-content: space-around;
+  width: 95vw;
   height: 100vh;
-  width: 100vw;
-}
-#main {
-  height: 50vh;
-  height: calc(val(--vh, 1vh) * 50);
-  background-color:$dBlue;
-
-  .row {
-  }
-  h2 {
-    font-size: 3rem;
-    line-height: 4.2rem;
-    font-weight: 700;
-    z-index: 10;
-    color: $white;
-    
-    @include media("<=tablet") {
-      font-size: 2.4rem;
-      line-height: 3rem;
+  align-items: center;
+  background: $gradient;
+  .about-media-content{
+    display: flex;
+    flex-flow: column;
+    height: 490px;
+    justify-content: space-around;
+    .image-container{
+      margin-left: 40px;
     }
-    @include media("<=phone") {
-      margin-top: 72px;
-      font-size: 1.7rem;
-      line-height: 2.2rem;
+
+    h2 {
+      font-size: 52px;
+      line-height: 63px;
+  
+      color: #FFFFFF;
     }
-  }
-}
 
-.container {
-  position: relative;
-}
+  }  
 
-.text-about-container {
-  width: 100%;
-  max-width: 815px;
-  position: absolute;
 
-  p {
-    z-index: 10;
-    color: #ffffff;
-    
-    font-family: "Proxima";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 185.9%;
-    letter-spacing: 0.03em;
-  }
-}
 
-.intro-overlay {
-  .top {
-    
-    width: 95%;
-    z-index: 0;
-    height:50%;
-    
+  .about-text-content {
+    max-width: 700px;
+    width: 100%;
 
-    .overlay-top {
-      
-      height: 100%;
-      width: 33.33%;
-      background-color: $white;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      @include media("<=tablet") {
-        width: 100vw;
-      }
-      &:nth-child(2) {
-        @include media("<=tablet") {
-          display: none;
-        }
-        left: 33.33%;
-      }
-      &:nth-child(3) {
-        @include media("<=tablet") {
-          display: none;
-        }
-        left: 66.66%;
-      }
+    .underline-about {
+      width: 100%;
+      max-width: 300px;
+      border: .5px solid #FFFFFF;
+    }
+
+    .about-title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+
+      color: $lBlue;
+    }
+
+    .about-text {
+      margin-top: 50px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 154.3%;
+      /* or 25px */
+
+
+      color: #FFFFFF;
+
     }
   }
-  .bottom {
-    height: 50vh;
 
-    position: absolute;
-    width: 95%;
-    z-index: 0;
-    bottom: 0;
-    z-index: 3;
-    .overlay-bottom {
-      position: absolute;
-      height: 100%;
-      width: 33.33%;
-      background-color: $dBlue;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      @include media("<=tablet") {
-        width: 100vw;
-      }
-      &:nth-child(2) {
-        @include media("<=tablet") {
-          display: none;
-        }
-        left: 33.33%;
-      }
-      &:nth-child(3) {
-        @include media("<=tablet") {
-          display: none;
-        }
-        left: 66.66%;
-      }
-    }
-  }
 }

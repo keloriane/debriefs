@@ -9,10 +9,7 @@ import Nav,{ Link, withRouter } from 'react-router-dom';
 
 const Techspace = (props) => {
     const techspaceTl = gsap.timeline();
-
-
     useEffect(() => {
-        
         //Split each word from a tag
         let titleArray = [];
         function splitWord(word) {
