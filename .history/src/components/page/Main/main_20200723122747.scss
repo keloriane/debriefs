@@ -1,0 +1,85 @@
+//head
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+
+
+
+#main-about-page {
+  display: flex;
+  color: $white;
+  justify-content: space-around;
+  width: 95vw;
+  height: 100vh;
+  align-items: center;
+  background: $gradient;
+  flex-wrap: wrap;
+  .logo-content-about{
+    @include media("<=tablet"){
+      display: none;
+    }
+  }
+  .about-media-content{
+    display: flex;
+    flex-flow: column;
+    height: 490px;
+    justify-content: space-around;
+    .image-container{
+      margin-left: 40px;
+      @include media("<=tablet"){
+        margin-left: 0;
+      }
+      img{
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+
+    h2 {
+      font-size: 52px;
+      line-height: 63px;
+      color: #FFFFFF;
+      @include media("<=tablet"){
+        font-size: 4vw;
+      }
+    }
+
+  }  
+
+
+
+  .about-text-content {
+    max-width: 700px;
+    width: 100%;
+    padding:25px;
+    p{
+      text-align: justify;
+    }
+
+    .underline-about {
+      width: 100%;
+      max-width: 300px;
+      border: .5px solid #FFFFFF;
+    }
+
+    .about-title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+
+      color: $lBlue;
+    }
+
+    .about-text {
+      margin-top: 50px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 154.3%;
+      /* or 25px */
+
+
+      color: #FFFFFF;
+
+    }
+  }
+
+}

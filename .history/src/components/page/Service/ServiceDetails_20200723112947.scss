@@ -1,0 +1,80 @@
+@import "./../../../assets//style/module/variables.scss";
+#service-details {
+  background: $gradient;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+  .service-details-wrapper{
+      width: 100%;
+      max-width: 1340px;
+      margin: 0 auto;
+      height: 743px;
+      display: flex;
+      align-items:center;
+      position: relative;
+
+      .details-photo{
+          max-width: 1000px;
+          overflow: hidden;
+          position: relative;
+          .blue-layer-service{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(107.09deg, rgba(133, 195, 230, 0.75) 17.8%, rgba(255, 255, 255, 0.27) 95.6%);
+          }
+          .blue-layer-service-under{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: $lBlue;
+
+          }
+          img{
+              width: 100%;
+              max-width: 1200px;
+          }
+      }
+      .absolute-details{
+        right: 0;
+        
+        padding: 25px;
+        
+        width: 670px;
+        
+      }
+      .details-content{
+        
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column;
+          
+         
+          p{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 175.9%;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+          }
+          h2{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 47px;
+            
+            color: #FFFFFF;
+          }
+      }
+  }
+  .text-details-service{
+      width: 100%;
+      
+
+  }
+}
