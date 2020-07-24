@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/debriefs/static/css/main.3122c252.chunk.css",
-    "main.js": "/debriefs/static/js/main.0deadbc0.chunk.js",
-    "main.js.map": "/debriefs/static/js/main.0deadbc0.chunk.js.map",
+    "main.css": "/debriefs/static/css/main.1c1747b5.chunk.css",
+    "main.js": "/debriefs/static/js/main.2955dbc9.chunk.js",
+    "main.js.map": "/debriefs/static/js/main.2955dbc9.chunk.js.map",
     "runtime-main.js": "/debriefs/static/js/runtime-main.62e649a7.js",
     "runtime-main.js.map": "/debriefs/static/js/runtime-main.62e649a7.js.map",
-    "static/js/2.b28cc104.chunk.js": "/debriefs/static/js/2.b28cc104.chunk.js",
-    "static/js/2.b28cc104.chunk.js.map": "/debriefs/static/js/2.b28cc104.chunk.js.map",
+    "static/js/2.c08569f6.chunk.js": "/debriefs/static/js/2.c08569f6.chunk.js",
+    "static/js/2.c08569f6.chunk.js.map": "/debriefs/static/js/2.c08569f6.chunk.js.map",
     "index.html": "/debriefs/index.html",
-    "precache-manifest.7748f174d76784dd0fb4348266b04bbf.js": "/debriefs/precache-manifest.7748f174d76784dd0fb4348266b04bbf.js",
+    "precache-manifest.7995a9824728e375d55b7e24142abc40.js": "/debriefs/precache-manifest.7995a9824728e375d55b7e24142abc40.js",
     "service-worker.js": "/debriefs/service-worker.js",
-    "static/css/main.3122c252.chunk.css.map": "/debriefs/static/css/main.3122c252.chunk.css.map",
-    "static/js/2.b28cc104.chunk.js.LICENSE.txt": "/debriefs/static/js/2.b28cc104.chunk.js.LICENSE.txt",
+    "static/css/main.1c1747b5.chunk.css.map": "/debriefs/static/css/main.1c1747b5.chunk.css.map",
+    "static/js/2.c08569f6.chunk.js.LICENSE.txt": "/debriefs/static/js/2.c08569f6.chunk.js.LICENSE.txt",
     "static/media/Ornella.png": "/debriefs/static/media/Ornella.69a7320e.png",
-    "static/media/footer.scss": "/debriefs/static/media/ProximaNova-Regular.bf9f5d50.otf",
+    "static/media/Blog.scss": "/debriefs/static/media/ProximaNova-Regular.bf9f5d50.otf",
     "static/media/abel.png": "/debriefs/static/media/abel.059127e9.png",
     "static/media/articles.png": "/debriefs/static/media/articles.ac8ebf27.png",
     "static/media/home.scss": "/debriefs/static/media/home.e6c49659.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.62e649a7.js",
-    "static/js/2.b28cc104.chunk.js",
-    "static/css/main.3122c252.chunk.css",
-    "static/js/main.0deadbc0.chunk.js"
+    "static/js/2.c08569f6.chunk.js",
+    "static/css/main.1c1747b5.chunk.css",
+    "static/js/main.2955dbc9.chunk.js"
   ]
 }
