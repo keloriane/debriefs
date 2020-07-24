@@ -1,0 +1,28 @@
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+
+#blog{
+    width: 100vw;
+    height: 100vh;
+    background: $gradient;
+    color: $white;
+    .blog-wrapper{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        .blog-article{
+            background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #0D0D0D 0%, #041D2C 100%);
+            border: 0.5px solid #D7D7D7;
+            box-sizing: border-box;
+            border-radius: 40px 0px;
+            max-width: 450px;
+            width: 100%;
+            height: 620px;
+            img{
+                width: 100%;
+                filter: saturate(0%);
+            }
+
+        }
+    }
+}
