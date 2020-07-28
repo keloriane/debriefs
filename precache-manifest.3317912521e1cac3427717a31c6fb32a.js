@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41ac46b386ee94522a2d70f051ab3cad",
+    "revision": "28bbc0bc5d58234ad752214e038c71e3",
     "url": "/debriefs/index.html"
   },
   {
-    "revision": "ea2269172a8752f67175",
-    "url": "/debriefs/static/css/main.1c1747b5.chunk.css"
+    "revision": "1dbc9899dc43c90f3c21",
+    "url": "/debriefs/static/css/main.bbd06721.chunk.css"
   },
   {
-    "revision": "4529366c7b06e02bc866",
-    "url": "/debriefs/static/js/2.c08569f6.chunk.js"
+    "revision": "e00495b061aaa41c4900",
+    "url": "/debriefs/static/js/2.463ad2e9.chunk.js"
   },
   {
     "revision": "8e1f2a45f25560b4c98213b97585f69d",
-    "url": "/debriefs/static/js/2.c08569f6.chunk.js.LICENSE.txt"
+    "url": "/debriefs/static/js/2.463ad2e9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ea2269172a8752f67175",
-    "url": "/debriefs/static/js/main.1176903c.chunk.js"
+    "revision": "1dbc9899dc43c90f3c21",
+    "url": "/debriefs/static/js/main.8809ce3b.chunk.js"
   },
   {
     "revision": "46be99811cf2d5924e25",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "69a7320ecc23b284f3dce65e71c69456",
     "url": "/debriefs/static/media/Ornella.69a7320e.png"
+  },
+  {
+    "revision": "83e0cf94e610e5a8dc7f469b247cf2a8",
+    "url": "/debriefs/static/media/Pamela.83e0cf94.png"
   },
   {
     "revision": "72b6f2c9990bd3d37b8013a59ed78902",
@@ -44,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/debriefs/static/media/abel.059127e9.png"
   },
   {
-    "revision": "ac8ebf27cbc1e133a77cf28e23924fc2",
-    "url": "/debriefs/static/media/articles.ac8ebf27.png"
+    "revision": "b5c3fe22bdc10a8b4b4d31963843160a",
+    "url": "/debriefs/static/media/bus.b5c3fe22.png"
   },
   {
     "revision": "e6c4965994cf996582fef755482104af",
@@ -56,12 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/debriefs/static/media/image9.6b726e07.png"
   },
   {
+    "revision": "12efe1ece920b6a43f81af7ae59a4d95",
+    "url": "/debriefs/static/media/ornella-about.12efe1ec.png"
+  },
+  {
     "revision": "75fb1c6b4db89ff136c44846288c7f47",
     "url": "/debriefs/static/media/pam.75fb1c6b.png"
   },
   {
     "revision": "5ff623f67650c6009fffd728269d3930",
     "url": "/debriefs/static/media/phil.5ff623f6.png"
+  },
+  {
+    "revision": "46e065cafd030686172a8e224c04c43e",
+    "url": "/debriefs/static/media/room.46e065ca.png"
   },
   {
     "revision": "592ee1626bd0ee9a264f59c056e3b606",
