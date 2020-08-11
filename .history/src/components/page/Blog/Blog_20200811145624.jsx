@@ -1,0 +1,36 @@
+import React from 'react';
+import "./Blog.scss";
+import { Articles } from './Articles';
+import { Title } from '../../Title/Title';
+import { HomeB } from '../../BreadCrumbs/HomeB';
+
+
+const Blog = () => {
+    useEffect(() => {
+        
+        useEffect(()=>{
+            axios.get('https://d-briefs.com/wp-json/wp/v2/posts')
+                .then((res)=> {
+                    console.log(res);
+                })
+                .catch((err)=>{
+                    console.warn(err)
+                })
+          })
+    }, [])
+    return (
+        <div id="blog">
+
+            <HomeB />
+            <div className="inner-blog">
+            <Title title="Blog"/>
+            <div className="blog-wrapper">
+               <Articles />
+               <Articles />
+            </div>
+
+            </div>
+        </div>
+    )
+}
+export default Blog;
