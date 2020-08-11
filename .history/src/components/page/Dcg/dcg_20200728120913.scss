@@ -1,0 +1,36 @@
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+
+#digital-career-center{
+    width: 95vw;
+    height: 100vh;
+    background-color: $white;
+    .inner-container{
+        display: flex;
+        width: 1280px;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+
+    }
+    .title-back-layer {
+        position: absolute;
+        left: -52%;
+        background-color: $dBlue;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        top: -16%;
+        width: 272px;
+        padding: 10px;
+        overflow: hidden;
+        @include media('<=tablet'){
+          position: relative;
+          display: block;
+          left: 0;
+          top: 0;
+        }
+    }
+  
+}

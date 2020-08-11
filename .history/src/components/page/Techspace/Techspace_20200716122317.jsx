@@ -17,7 +17,7 @@ const Techspace = () => {
         let titleArray = [];
         function splitWord(word) {
             return [...word]
-            .map(letter => `<span class="chars">${letter}</span>`)
+            .map(letter => `<span className="chars">${letter}</span>`)
             .join("");
         }
         const words = [...document.querySelectorAll(".text-letter")];
@@ -57,8 +57,8 @@ const Techspace = () => {
             <div className="techspace">
                 <div className="screen">
                     <img src={techspace} alt="" />
-                    <div class="screen-video">
-                        <video loop muted autoplay="true" class="screen__video">
+                    <div className="screen-video">
+                        <video loop muted autoplay="true" className="screen__video">
                             <source src={video} type="video/mp4" />
                         </video>
                     </div>

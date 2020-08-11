@@ -1,0 +1,43 @@
+@import "./../../assets/style/module/variables.scss";
+.home-nav {
+    width: 95%;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            a {
+                font-family: "Proxima";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 175.9%;
+                /* or 32px */
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            button {
+                position: relative;
+                width: 169px;
+                height: 49px;
+                border: 1px solid $white;
+                box-sizing: border-box;
+                background: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                    color: $white;
+                
+            }
+        }
+    }
+}
