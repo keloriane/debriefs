@@ -1,0 +1,68 @@
+@import "./../../../assets//style//module/breakpoints.scss";
+#story{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    background-color: #ffffff;
+    @include media ("<=1175px"){
+        height: auto;
+        
+    }
+    
+}
+
+.title-story-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#our-story {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: baseline;
+    width: 95%;
+    flex-wrap: wrap;
+    @include media ("<=1175px"){
+        justify-content: center;
+
+    }
+
+
+    .text-story-container {
+        font-style: normal;
+        font-size: 19px;
+        line-height: 162.3%;
+        /* or 31px */
+        color: #717171;
+        height: 478px;
+        max-width: 530px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        p{
+            margin-bottom: 50px;
+
+        }
+    }
+
+}
+.techspace-team{
+    display: flex;
+    justify-content: space-around;
+    @include media ("<=tablet"){
+        display: none;
+        
+    }
+}
+
+.team-mate{
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}
