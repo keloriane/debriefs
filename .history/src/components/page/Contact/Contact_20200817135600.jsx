@@ -8,7 +8,24 @@ import Nav from './../../Nav/Nav';
 import Form from "./Form";
 
 const Contact = (props) => {
-  
+    
+    const [state , setState] = useState({
+        name:"",
+        lastName:"",
+        mail:"",
+        message:''
+    })
+
+
+    const handleForm = (e) => {
+        e.preventDefault();
+        let target = e.target
+        let value = e.target.value
+        
+        setState({
+
+        })
+    }
     let contactTl = gsap.timeline({paused:true})
     useEffect(() => {
 
@@ -68,7 +85,7 @@ const Contact = (props) => {
                     </div>
                 </div>
                 <div className="contact-form">
-                    <Form />
+                    
                 </div>
             </div>
         </div>
